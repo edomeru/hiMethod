@@ -3,6 +3,7 @@
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   font-weight: 400;
+  -webkit-text-size-adjust:100%; /* Adjust textsize for android phones */
 }
 .footer_contact{background-color:#E1E1F2;border-top: .2px solid gray;border-bottom: .2px solid gray;}
 .footer_spl_greeting{background-color:#E1E1F2;border-top: .2px solid gray;border-bottom: .2px solid gray;}
@@ -13,7 +14,7 @@
 .test { margin: 0 auto;}
 
 /* Start Body */
-
+.contents{display:none;}
 body {
 	margin: 0;
 	padding: 0;
@@ -713,6 +714,14 @@ ul{
 @media not all and (min-resolution:.001dpcm) { 
     @media {
 		
+.greetingcontent {
+	
+	font-size: 16px;
+    font-family: メイリオ, Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+    color: rgb(51, 51, 51);
+	padding-bottom:20px;
+	
+}	
 hr{display:block;
 border-top: 1px solid blue;}
 
@@ -1261,10 +1270,21 @@ a.more {
 	font-weight: bold;
 	padding: 0px 0px 20px 0px;
 	font-family: URW DIN Bold;
-
-	
 }
 
+
+
+
+.cobelowtitleUpdating {
+	font-size: 18px;
+	color: #333333;
+	background-color: #EEE;
+	text-align: center;
+	font-weight: bold;
+	padding: 70px 70px 90px 90px;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	white-space: nowrap;
+}
 
 .cobelowdescGreeting {
 	font-size: 14px;
@@ -1752,12 +1772,13 @@ header{
 }
 
 .handle{
-	font-size:2.5em;
+	font-size:2.8em;
 	width:100%;
 	background: blue;
 	text-align: left;
 	box-sizing: border-box;
-	padding: 35px 10px;
+	padding: 35px 35px;
+	padding-bottom: 55px;
 	cursor: pointer;
 	color: white;
 	display:none;
@@ -1918,12 +1939,13 @@ header{
 	}
 	
 .eventdatesIndex{
-	padding: 15px 1px;
+	padding-top: 15px;
+	padding-bottom: 40px;
 	color:black;
 	background:transparent;
 	text-align:left;
 	display:none;
-	font-size: 2.5em;
+	font-size: 38px;
 	width:100%;
 	height:200px;
 	line-height:28px; 
@@ -2204,7 +2226,7 @@ header{
 	height:40px;
 	background-color:#E1E1F2;
 	padding-bottom:15px;
-	padding-left:40px;
+	padding-left:43px;
 	border-bottom: .2px solid gray;
 	font-size: 1.1em;
 }
@@ -2322,12 +2344,13 @@ padding-top:10px;padding-left:55px;padding-bottom:55px;font-size:30px;line-heigh
 	display:none;
 }
 .handle{
-	font-size:2.5em;
+	font-size:2.8em;
 	width:100%;
 	background: blue;
 	text-align: left;
 	box-sizing: border-box;
-	padding: 35px 10px;
+	padding: 35px 35px;
+	padding-bottom: 55px;
 	cursor: pointer;
 	color: white;
 	display:none;
@@ -2350,18 +2373,20 @@ padding-top:10px;padding-left:55px;padding-bottom:55px;font-size:30px;line-heigh
 	line-height:1.3em;
 	
 }
-
+.fa-bars{color:white;}
 .newslabel2{
-	padding: 25px 25px;
+	padding-top: 60px;
+	padding-bottom: 25px;
+	padding-left:30px;
 	color:blue;
 	background:transparent;
 	text-align:left;
 	display:none;
-	font-size: 1.5em;
+	font-size: 38px;
 }
-.indexparagM{font-size:33px;display:none;padding-top:80px;padding-bottom:12px;text-align:center;}
+.indexparagM{font-size:38px;display:none;padding-top:80px;padding-bottom:12px;text-align:center;line-height:1.5em;}
 .indexPicM{height:400px;width:100%;background-size:100% 310px;background-repeat:no-repeat;display:none;}
-.indexMoreM{width:96%;height:60px;background-color:blue;color:white;text-align:center;padding-top:40px;padding-left:20px;padding-right:20px;display:none;font-size:13px;}
+.indexMoreM{width:97%;height:60px;background-color:blue;color:white;text-align:center;padding-top:40px;padding-left:20px;padding-right:20px;display:none;font-size:13px;}
 .service-picleftM{padding-top:30px;display:none;font-size:33px;}
 .footerLogo{position:absolute;left:20px;bottom:10px;top:830px}
 
@@ -2551,15 +2576,15 @@ padding-top:10px;padding-left:55px;padding-bottom:55px;font-size:30px;line-heigh
 }
 
 .bannerText{font-size:2.9em;color:white;text-align: center;display:none;}
-.bannerTextIndexM{font-size:3.9em;color:white;text-align: center;display:none;padding-top:300px;}
+.bannerTextIndexM{font-size:3.9em;color:white;text-align: center;display:none;padding-top:150px;}
 .accessTitle{padding:25px;font-size:33px;display:none;}
 .accessSubtitle{padding:25px;font-size:33px;line-height:1.5em;display:none;}
 .contactTitleM{padding:5px;padding-top:100px;font-size:40px;line-height:1.5em;display:none;}
 .contactSubtitleM{padding:25px;font-size:33px;	border-top: 1.5px solid transparent;
   border-image: linear-gradient(to right, #0f44fd , #60bec8);
   border-image-slice: 1;line-height:1.5em;display:none;}
- .outlineSubtitle{padding-top:20px;padding-bottom:85px;padding-left:10px;font-size:25px;	border-top: 1px solid blue;display:none;line-height:3.5em;}
- .outlineSubtitleSmallerLineHeight{padding-top:5px;padding-bottom:45px;padding-left:10px;font-size:38px;	border-top: 1.5px solid blue;display:none;line-height:1.5em;}
+ .outlineSubtitle{padding-top:20px;padding-bottom:85px;padding-left:10px;font-size:38px;	border-top: 1px solid blue;display:none;line-height:3.5em;}
+ .outlineSubtitleSmallerLineHeight{padding-top:5px;padding-bottom:45px;padding-left:10px;font-size:12px;	border-top: 1.5px solid blue;display:block;line-height:1.5em;}
  .serviceSubtitleSmallerLineHeight{padding-top:5px;padding-bottom:45px;font-size:38px;	border-top: 1.5px solid blue;display:none;line-height:1.5em;}
  .privacyLogoM{width:175;height:175px;display:none;}
  .serviceSubtitleSmallerLineHeightNoLine{padding-top:5px;padding-bottom:45px;font-size:38px;display:none;line-height:1.5em;}
@@ -2603,8 +2628,9 @@ padding-top:10px;padding-left:55px;padding-bottom:55px;font-size:30px;line-heigh
 .indexlinkM{font-size:7px;color:white;display:none;}	
 /*mobile*/
 @media only screen and (max-device-width: 480px) {
+.contents{display:block;}
 .indexlinkM{display:block;}
-.outlineSubtitleSmallerLineHeight{display:block;}
+.outlineSubtitleSmallerLineHeight{display:block;font-size:12px;}
 .serviceSubtitleSmallerLineHeight{display:block;}
 .serviceSubtitleSmallerLineHeightNoLine{display:block;}
 .recruitMainTItle{display:block;}
@@ -2892,18 +2918,19 @@ section{
 	color: white;*/
 	display:inline-block;
 }
+.outlineSubtitleSmallerLineHeight{display:block;font-size:12px;}
 
 }
 
 
 
-	
+/*	WEB SHORTEST WINDOW
 @media only screen and (max-width: 400px) {
 .indexlinkM{font-size:33px;color:white;display:display;}	
 .outlineSubtitleSmallerLineHeight{padding-top:5px;padding-bottom:45px;font-size:19px;	border-top: 1px solid transparent;
   border-image: linear-gradient(to right, #0f44fd , #60bec8);
   border-image-slice: 1;display:block;line-height:1.5em;}
-  .serviceSubtitleSmallerLineHeight{padding-top:5px;padding-bottom:45px;font-size:19px;	border-top: 1px solid transparent;
+  .serviceSubtitleSmallerLineHeight{padding-top:5px;padding-bottom:45px;font-size:12px;	border-top: 1px solid transparent;
   border-image: linear-gradient(to right, #0f44fd , #60bec8);
   border-image-slice: 1;display:block;line-height:1.5em;}
     .serviceSubtitleSmallerLineHeightNoLine{padding-top:5px;padding-bottom:45px;font-size:19px;}
@@ -2960,24 +2987,25 @@ section{
 	border-image-slice: 1;display:block;}
 .eventdatesIndex{
 	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-bottom: 40px;
 	color:black;
 	background:transparent;
 	text-align:left;
 	display:block;
-	font-size: 19px;
+	font-size: 38px;
 	width:100%;
 	height:200px;
 	line-height:28px; 
 }
 .newslabel2{
-	padding-top: 25px;
+	padding-top: 60px;
 	padding-bottom: 25px;
+	padding-left: 30px;
 	color:blue;
 	background:transparent;
 	text-align:left;
 	display:block;
-	font-size: 19px;
+	font-size: 38px;
 }
 	
 .mobileLogo{
@@ -3009,11 +3037,12 @@ section{
 	border-image: linear-gradient(to right, #0f44fd , #60bec8);
 	border-image-slice: 1;
 }
-.indexparagM{font-size:19px;display:block;padding-top:10px;padding-bottom:12px;text-align:center;}
+.indexparagM{font-size:19px;display:block;padding-top:10px;padding-bottom:12px;text-align:center;line-height:1.5em;}
 .indexPicM{height:160px;width:100%;background-size:100% 390px;background-repeat:no-repeat;display:block;}
-.indexMoreM{width:96%;height:30px;background-color:blue;color:white;text-align:center;padding-top:80px;padding-left:20px;padding-right:20px;display:block;font-size:19px;}
+.indexMoreM{width:97%;height:30px;background-color:blue;color:white;text-align:center;padding-top:80px;padding-left:20px;padding-right:20px;display:block;font-size:19px;}
 
 /*STARTPASTE*/
+/*
 .footerCopyRightRelativeM{display: none;}
 	.latestnews{max-width: 400px;display: block;}
  .pmarkIndexM{width:62px;height:62px;display:block;}
@@ -3136,7 +3165,7 @@ line-height:1.3em;
 	padding-left:15px;
 	padding-right:15px;
 }
- .outlineSubtitle{padding-top:15px;padding-bottom:45px;font-size:19px;	border-top: 1.5px solid transparent;
+ .outlineSubtitle{padding-top:15px;padding-bottom:45px;font-size:38px;	border-top: 1.5px solid transparent;
   border-image: linear-gradient(to right, #0f44fd , #60bec8);
   border-image-slice: 1;display:block;line-height:1.5em;}
 .nojobopening{
@@ -3245,7 +3274,7 @@ padding-top:0px;padding-left:25px;padding-bottom:45px;font-size:19px;line-height
 .titleMobile{display:block;}
 
 /*END PASTE*/	
-	
+	/*
 	.mapTitle{display:block;}
 
 .contactTitleM{padding:10px;font-size:40px;line-height:1.5em;display:block;}
@@ -3353,12 +3382,13 @@ section{
 }
 
 .handle{
-	font-size:1.5em;
+	font-size:2.8em;
 	width:100%;
 	background: blue;
 	text-align: left;
 	box-sizing: border-box;
-	padding: 35px 10px;
+	padding: 35px 35px;
+	padding-bottom: 55px;
 	cursor: pointer;
 	color: white;
 	display:inline-block;
@@ -3369,7 +3399,7 @@ section{
 .footer_spl{display:none;}
 }
 
-
+*/
 
 
 
@@ -4005,6 +4035,7 @@ and (orientation : portrait){
 .contactInfolastParag{font-size:40px;}
 .footer_access{display:none;}
 .relative_footer_access{display:block;}
+.outlineSubtitleSmallerLineHeight{padding-top:5px;padding-bottom:45px;padding-left:10px;font-size:38px;	border-top: 1.5px solid blue;display:block;line-height:1.5em;}
 }
 
 /*iPhone 5 LANDSCAPE*/
@@ -4016,6 +4047,7 @@ and (orientation : landscape) {
 .contactInfolastParag{font-size:40px;}
 .footer_access{display:none;}
 .relative_footer_access{display:block;}
+.outlineSubtitleSmallerLineHeight{padding-top:5px;padding-bottom:45px;padding-left:10px;font-size:38px;	border-top: 1.5px solid blue;display:block;line-height:1.5em;}
 }
 
 /*iPhone X PORTRAIT*/
@@ -4030,7 +4062,7 @@ and (orientation : landscape) {
 .footer_access{display:none;}
 .relative_footer{display:none;margin-top:150px;height:210px;}
 .relative_footer_access{display:block;}
-.outlineSubtitleSmallerLineHeight{display:block;}
+.outlineSubtitleSmallerLineHeight{padding-top:5px;padding-bottom:45px;padding-left:10px;font-size:38px;	border-top: 1.5px solid blue;display:block;line-height:1.5em;}
 .serviceSubtitleSmallerLineHeight{display:block;}
 .serviceSubtitleSmallerLineHeightNoLine{display:block;}
 }
@@ -4048,7 +4080,7 @@ and (orientation : landscape) {
    .footer_access{display:none;}
    .outlineSubtitle{display:block;}
    .contactTitleM{display:block;}
-   .outlineSubtitleSmallerLineHeight{display:block;}
+.outlineSubtitleSmallerLineHeight{padding-top:5px;padding-bottom:45px;padding-left:10px;font-size:38px;	border-top: 1.5px solid blue;display:block;line-height:1.5em;}
    .serviceSubtitleSmallerLineHeight{display:block;}
    .serviceSubtitleSmallerLineHeightNoLine{display:block;}
    }
@@ -4069,7 +4101,7 @@ and (orientation : landscape) {
     and (-webkit-device-pixel-ratio : 3) {
    .outlineSubtitle{display:block;}
    .contactTitleM{display:block;}
-   .outlineSubtitleSmallerLineHeight{display:block;}	
+   .outlineSubtitleSmallerLineHeight{padding-top:5px;padding-bottom:45px;padding-left:10px;font-size:38px;	border-top: 1.5px solid blue;display:block;line-height:1.5em;}
 .serviceSubtitleSmallerLineHeight{display:block;}   }
 
 /* iPhone 6 Portrait */ 
@@ -4083,7 +4115,7 @@ and (orientation : landscape) {
 .relative_footer_access{display:block;}
 .footer_spl{display:none}
 .relative_footer{display:block;}
-.outlineSubtitleSmallerLineHeight{display:block;}
+.outlineSubtitleSmallerLineHeight{padding-top:5px;padding-bottom:45px;padding-left:10px;font-size:38px;	border-top: 1.5px solid blue;display:block;line-height:1.5em;}
 .serviceSubtitleSmallerLineHeight{display:block;}
 .serviceSubtitleSmallerLineHeightNoLine{display:block;}
 }
@@ -4099,6 +4131,7 @@ and (orientation : landscape) {
    .relative_footer_access{display:block;}
    .serviceSubtitleSmallerLineHeight{display:block;}
    .serviceSubtitleSmallerLineHeightNoLine{display:block;}
+   .outlineSubtitleSmallerLineHeight{padding-top:5px;padding-bottom:45px;padding-left:10px;font-size:38px;	border-top: 1.5px solid blue;display:block;line-height:1.5em;}
 }
 
  /* iPhone 6+ Portrait */
@@ -4115,13 +4148,14 @@ and (orientation : landscape) {
 footer_spl_greeting{display:none;}
 .serviceSubtitleSmallerLineHeight{display:block;}
 .serviceSubtitleSmallerLineHeightNoLine{display:block;}
+.outlineSubtitleSmallerLineHeight{padding-top:5px;padding-bottom:45px;padding-left:10px;font-size:38px;	border-top: 1.5px solid blue;display:block;line-height:1.5em;}
 }
 
  /* iPhone 6+ landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : landscape) { 
       .outlineSubtitle{display:block;border-bottom:none;}
       .contactTitleM{display:block;}
-	  .outlineSubtitleSmallerLineHeight{display:block;}
+	  .outlineSubtitleSmallerLineHeight{padding-top:5px;padding-bottom:45px;padding-left:10px;font-size:38px;	border-top: 1.5px solid blue;display:block;line-height:1.5em;}
 	  .footer_access{display:none;}
 .relative_footer_access{display:block;}
 .serviceSubtitleSmallerLineHeight{display:block;}
@@ -4134,7 +4168,7 @@ footer_spl_greeting{display:none;}
 .contactInfolastParag{font-size:40px;}
  .outlineSubtitle{display:block;}
       .contactTitleM{display:block;}
-	  .outlineSubtitleSmallerLineHeight{display:block;}
+	 .outlineSubtitleSmallerLineHeight{padding-top:5px;padding-bottom:45px;padding-left:10px;font-size:38px;	border-top: 1.5px solid blue;display:block;line-height:1.5em;}
 	  .footer_access{display:none;}
 .relative_footer_access{display:block;}
 .serviceSubtitleSmallerLineHeight{display:block;}
@@ -4147,7 +4181,7 @@ footer_spl_greeting{display:none;}
 .contactInfolastParag{font-size:40px;}
 	 .outlineSubtitle{display:block;}
       .contactTitleM{display:block;}
-	  .outlineSubtitleSmallerLineHeight{display:block;}
+	  .outlineSubtitleSmallerLineHeight{padding-top:5px;padding-bottom:45px;padding-left:10px;font-size:38px;	border-top: 1.5px solid blue;display:block;line-height:1.5em;}
 	  .footer_access{display:none;}
 .relative_footer_access{display:block;}
 .serviceSubtitleSmallerLineHeight{display:block;}
@@ -4159,7 +4193,7 @@ footer_spl_greeting{display:none;}
 .contactInfolastParag{font-size:40px;}
  .outlineSubtitle{display:block;}
       .contactTitleM{display:block;}
-	  .outlineSubtitleSmallerLineHeight{display:block;}
+	 .outlineSubtitleSmallerLineHeight{padding-top:5px;padding-bottom:45px;padding-left:10px;font-size:38px;	border-top: 1.5px solid blue;display:block;line-height:1.5em;}
 	  .serviceSubtitleSmallerLineHeightNoLine{display:block;}
 	  .footer_access{display:none;}
 .relative_footer_access{display:block;}
@@ -4171,7 +4205,7 @@ footer_spl_greeting{display:none;}
 .contactInfolastParag{font-size:40px;}
  .outlineSubtitle{display:block;}
       .contactTitleM{display:block;}
-	  .outlineSubtitleSmallerLineHeight{display:block;}
+	  .outlineSubtitleSmallerLineHeight{padding-top:5px;padding-bottom:45px;padding-left:10px;font-size:38px;	border-top: 1.5px solid blue;display:block;line-height:1.5em;}
 	  .serviceSubtitleSmallerLineHeight{display:block;}
 	  .serviceSubtitleSmallerLineHeightNoLine{display:block;}
 	  .footer_access{display:none;}
